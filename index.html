@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+
+<style>
+
+#Log{padding: 20px;
+    margin: 50px;
+    background-color: white;}
+
+body{background-image: url(https://static1.therichestimages.com/wordpress/wp-content/uploads/2024/04/bet-you-re-loving-this-the-umbrella-academy-cast-_site_gr-1.jpg);
+background-repeat: no-repeat;
+        background-size: cover;}
+
+</style>
+
+
+</head>
+<body>
+
+    <div id="Log">
+   
+    <h1>Log In</h1>
+
+<p>Input the indicated email and password.
+</p>
+
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email" placeholder="five@gmail.com">
+
+<br><br>
+
+<label for="password">Password:</label><br>
+<input type="password" id="password" name="password" placeholder="Delor3s">
+
+<br><br>
+
+<input type="checkbox" id="stay" name="stay" value="stay">
+<label for="stay">Remember me</label>
+
+<br><br>
+<button onclick="login()">Log In</button>
+
+<p id="message"></p>
+
+</div>
+
+
+    
+    <script>
+//Use if-else statement for username and password verification. Use  === comparison operator and AND operator to check if condition is TRUE.
+
+
+//Use Switch Code for the checkbox
+
+function login(){ 
+    
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var result;
+
+    if (email === "five@gmail.com" && password === "Delor3s")
+    result = true;
+    else
+    result = false;
+
+    let stay= document.getElementById("stay").checked; 
+         //when checked, it reads true
+
+        switch(result) {
+            case true:
+                document.getElementById("message").innerHTML = window.location.href = "notebook.html";
+            break;
+
+            case false:
+                document.getElementById("message").innerHTML = "Email or password incorrect.";
+            break;
+
+            //default may almost never needed since there is already true and false statement;
+ }
+
+
+
+
+}
+
+
+</script>
+
+</body>
+</html>
+
+<!-- <div class="container">
+    <div class="row">
+       
+        <div class="col">
+            <h2>Filipino</h2>
+          
+        </div>
+      
+         <div class="col">
+            <h2>Filipino</h2>
+           
+        </div>
+       
+         <div class="col">
+            <h2>Filipino</h2>
+           
+        </div>
+    </div>
+</div> 
+
+-->
