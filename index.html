@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Mozilla+Text:wght@200..700&display=swap" rel="stylesheet">
 
 <style>
 
 #Log{padding: 20px;
     margin: 50px;
-    background-color: white;}
+    background-color:rgb(255, 255, 255);
+    border-radius: 10%;
+    width: 300px;
+    height: auto;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.747), 0 6px 20px 0 rgba(0, 0, 0, 0.747);
+    font-family: "Comic Neue";
+}
 
-body{background-image: url(https://static1.therichestimages.com/wordpress/wp-content/uploads/2024/04/bet-you-re-loving-this-the-umbrella-academy-cast-_site_gr-1.jpg);
+body{background-image: url(https://wallpaperaccess.com/full/1673354.jpg);
 background-repeat: no-repeat;
         background-size: cover;}
 
@@ -22,11 +32,20 @@ background-repeat: no-repeat;
 <body>
 
     <div id="Log">
-   
-    <h1>Log In</h1>
 
-<p>Input the indicated email and password.
-</p>
+    <img src="https://logos-world.net/wp-content/uploads/2022/01/Umbrella-Academy-Symbol.png" style="height: 100px; width: auto; margin: 0 auto; display: block;">
+   
+    <h2 style="font-family: Mozilla Text;">Log In</h2>
+
+<details class="ontoggle">
+        <summary>Help</summary>
+       
+        <p id="instruct">
+          Input the indicated username and password, then click 'Log In' to proceed.
+        </p>
+</details>
+
+<br>
 
 <label for="email">Email:</label><br>
 <input type="email" id="email" name="email" placeholder="five@gmail.com">
@@ -72,7 +91,8 @@ function login(){
 
         switch(result) {
             case true:
-                document.getElementById("message").innerHTML = window.location.href = "notebook.html";
+                alert("Successfully logged in!");
+                window.location.href = "notebook.html";
             break;
 
             case false:
