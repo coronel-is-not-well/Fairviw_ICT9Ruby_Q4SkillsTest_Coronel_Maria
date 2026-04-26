@@ -10,14 +10,45 @@
 
 #left{
     padding: 20px;
-    background-color: blue;
-height: fit-content;}
+    padding-left: 30px;
+    background-color: rgb(255, 255, 255);
+min-height: 100vh;
+color: black;
+ position: fixed; /* Fixes it in place */
+    top: 0;           /* Sticks to the top of the screen */
+    left: 0;          /* Sticks to the left of the screen */
+    width: 250px;     /* Adjust the width as needed */
+    z-index: 1000;    /* Makes sure it stays above other content */
+    height: 100%; 
+}
 
 #right{
     padding: 20px;
-    background-color: rgb(158, 52, 52);
-height: fit-content}
+    padding-right: 0%;
+    background-color: rgb(255, 255, 255);
+height: fit-content;
+min-height: 100vh;
+background-image: url(https://static.vecteezy.com/system/resources/previews/013/477/752/original/black-and-white-striped-background-free-vector.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+color: #ffffff;}
 
+#class{color: rgb(254, 177, 12);}
+
+
+
+#notebook{padding: 20px;
+    
+     margin-left: 0;
+    margin-right: 0;
+    margin: 10px;
+    background-color:rgb(255, 255, 255);
+    
+    width: 250px;
+    height: 300px;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.747), 0 6px 20px 0 rgba(0, 0, 0, 0.747);
+    box-sizing: border-box;}
 
 </style>
 
@@ -35,13 +66,17 @@ height: fit-content}
 
         <div class="col-lg-3" id="left">
 
-    <img src="https://tse1.mm.bing.net/th/id/OIP.Au6ENp5h-nFY8KNakuvhbgHaEK?pid=Api" alt="logo" width="auto" height="90" style="text-align: center;">
+    <img src="https://logos-world.net/wp-content/uploads/2022/01/Umbrella-Academy-Symbol.png" alt="logo" width="auto" height="90" style="text-align: center;">
 
     
-    <br><br>
+    <br><br><br>
+
+     
+    
+
 
     <p>Dashboard</p><br>
-    <p>Classes</p><br>
+    <p style="color: rgb(254, 177, 12); ">Classes</p><br>
     <p>Tasks</p><br>
     <p>Profile</p><br>
     <p>Log Out</p><br>
@@ -50,31 +85,61 @@ height: fit-content}
 
         </div>
 
+        <div class="col-lg-3">
+        </div>
+
         <div class="col-lg-9" id="right">
 
+    <div id="class">
     <h3>Classes</h3>
     <br>
     <p>choose a class</p>
+    </div>
+    <br>
 
-    <div class="container">
+    <div class="container" >
+        
+        <div class="row">
+       
+            <div class="col-md-6" id="notebook">
+                <h4>Superhuman Strength</h4>
+            </div>
+      
+            <div class="col-md-6" id="notebook">
+                <h4>Trajectory Manipulation</h4>
+            </div>
+       
+            <div class="col-md-6" id="notebook">
+                <h4>Mental Manipulation</h4>
+            </div>
+
+        </div>
+       
+
+        <div class="row">
+       
+            <div class="col-md-6" id="notebook">
+                <h4>Mediumship</h4>
+            </div>
+      
+            <div class="col-md-6" id="notebook">
+                <h4>Time Travel</h4>
+            </div>
+
+            <div class="col-md-6" id="notebook">
+                <h4>Eldritch Tentacles</h4>
+            </div>
+       
+        </div>
+
+
     <div class="row">
        
-        <div class="col">
-            <h2>Filipino</h2>
-          
+        <div class="col-md-6" id="notebook">
+            <h4>Sound Manipulation</h4>
         </div>
-      
-         <div class="col">
-            <h2>ENG</h2>
-           
-        </div>
-       
-         <div class="col">
-            <h2>MATH</h2>
-           
-        </div>
+    
     </div>
-</div>
 
         </div>
     </div>
